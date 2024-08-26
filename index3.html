@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    <nav class="head">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="http://google.com">Groups</a></li>
+            <li><a href="index3.html">Status</a></li>
+        </ul>
+       </nav>
+
+    <body class="main">
+        <input class="img" type="image" src="portrait-young-woman-smiling-isolated_23-2149158579.jpg" alt="">
+       <article class="art">
+        <h2 class="head">Name</h2>
+        <p class="para">Omoniyi Ayoola</p>
+        <h2 class="head2">Email</h2>
+        <p class="para2">Omoniyisulatn9@gmail.com</p>
+        <h2 class="head3">Phone Number</h2>
+        <p class="para3">+2348101734037</p>
+    </article>
+    </body>
+    
+    <style>
+        @media (max-width:600px){
+          .head{
+            width: 1%;
+            margin-top: 6px;
+            margin-left: 6px;
+
+            .img{
+        width: 10%;
+       }
+
+       .main .art{
+        width: 100%;
+       }
+          
+          }
+       
+       
+       
+        }
+        @media (min-width:768px){
+          .head{
+            width: 40%;
+            margin-top: 6px;
+            margin-left: 6px;
+          }
+       
+       .img{
+        width:50%;
+       }
+       
+        }
+
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 60%;
+    margin: top -10px;
+    text-align: justify;
+    margin-right: auto;
+    margin-left: auto;
+  margin-top: 5%
+}
+    .sec{
+      background-color: transparent;
+      width:100%;
+      backdrop-filter: blur(5px);
+    }
+
+ul,li,a{
+    font-size:x-large;
+   color: rgb(14, 155, 143);
+   list-style-type: none;
+   font-family: sans-serif;
+   background: #18181b;
+   align-items: center;
+   justify-content:space-between;
+   height:50px;
+   width: 100%;
+   padding: 0 50px;
+display: flex;
+border: 1px solid #27272a;
+border-radius: 40px;
+gap: 10px;
+}
+
+li,a {
+  justify-content: center;
+  list-style-type: none;
+}
+        .main{
+              display: flexbox;
+            justify-content: center;
+            align-items: center;
+            background-color: darkmagenta ;
+            color: #fff;
+            font-size: larger;
+            gap: 30px;
+           
+
+        }
+
+        .img{
+            border: 2px solid #000000;
+            border-style: solid;
+            border-radius: 80px;
+            margin: 20%;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+            width: 150px;
+            height: 200px;
+               
+        }
+
+        .art{
+            margin-left: 550px;
+            margin-top: -500px;
+           font-size:40px;
+           
+        }
+
+    </style>
+</html>
