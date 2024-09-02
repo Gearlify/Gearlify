@@ -67,6 +67,7 @@ header{
   figcaption{
     font-size: small;
     padding-left:950px;
+      padding-right:50px;
   }
 
   .bx bx-arrow-back{
