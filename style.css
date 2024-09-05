@@ -221,6 +221,29 @@ montserrat-font {
   font-style: normal;
 }
 
+.more-con{
+  display: inline-block;
+  position: relative;
+  
+ }
+
+
+ .more{
+    background-color: /*#f9f9f9*/ black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    min-width: 30px;
+    padding: 12px 16px;
+    position: absolute;
+    right: 1%;
+    z-index: 1; 
+    font-size: 15px;
+ }
+
+.more-con:hover .more {
+  display: block;
+}
+
 
 .article{
   display: block;
@@ -237,12 +260,12 @@ background-color: aquamarine;
 margin: 5%;
 padding: 5%;
 max-height: 500px;
-display: flex;
+
 }
 
 
 
-.title{
+ .title{
   color: #fff;
   font-family:montserrat;
   font-size: 50px;
@@ -262,7 +285,6 @@ top: 1px;
  bottom: 90px;
  top: 30px;
 }
-
 
  .img{
   margin-left: 40px;
@@ -367,7 +389,6 @@ max-height:500px;
   font-family:montserrat;
   font-size: 50px;
   position: relative;
-  bottom: 800px;
   left: 50px;
   
 }
@@ -525,6 +546,7 @@ html,body{
 
   .sec .marquee .form{
     width: 100%;
+    
   }
 
 
@@ -533,6 +555,7 @@ html,body{
     margin-right: 900px;
     padding-right: 500px;
     margin-left: -120px;
+    overflow-x: hidden;
   
   }
 
@@ -550,12 +573,36 @@ html,body{
   .marquee .form {
     margin: 5%;
     display: flex-box;
+ 
   }
 
   header{
     margin: 80px;
   }
 
+
+  .more{
+    background-color: /*#f9f9f9*/ black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    min-width: 30px;
+    min-height: 30px;
+    padding-bottom: 80px;
+    padding: 12px 16px;
+    position: relative;
+    right: 5%;
+    z-index: 1; 
+    font-size: 15px;
+    
+ }
+
+ .more-con{
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+ 
+ 
+ }
 
 .img{
   width: 25%;
