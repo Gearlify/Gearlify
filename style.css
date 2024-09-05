@@ -227,23 +227,21 @@ montserrat-font {
   
  }
 
-
- .more{
-    background-color: /*#f9f9f9*/ black;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    display: none;
-    min-width: 30px;
-    padding: 12px 16px;
-    position: absolute;
-    right: 1%;
-    z-index: 1; 
-    font-size: 15px;
- }
-
-.more-con:hover .more {
-  display: block;
+.more{
+  background-color: /*#f9f9f9*/ black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display: none;
+  min-width: 30px;
+  padding: 12px 16px;
+  position: absolute;
+  right: 1%;
+  z-index: 1; 
+  font-size: 15px;
 }
 
+.more-con:hover .more {
+display: block;
+}
 
 .article{
   display: block;
@@ -260,13 +258,12 @@ background-color: aquamarine;
 margin: 5%;
 padding: 5%;
 max-height: 500px;
-
-
+display: flex;
 }
 
 
 
- .title{
+.title{
   color: #fff;
   font-family:montserrat;
   font-size: 50px;
@@ -274,8 +271,6 @@ max-height: 500px;
   bottom: 500px;
 z-index: 1;
 top: 1px;
-
-
  
  
 }
@@ -288,6 +283,7 @@ top: 1px;
  bottom: 90px;
  top: 30px;
 }
+
 
  .img{
   margin-left: 40px;
@@ -392,6 +388,7 @@ max-height:500px;
   font-family:montserrat;
   font-size: 50px;
   position: relative;
+  bottom: 800px;
   left: 50px;
   
 }
@@ -549,7 +546,6 @@ html,body{
 
   .sec .marquee .form{
     width: 100%;
-    
   }
 
 
@@ -558,7 +554,6 @@ html,body{
     margin-right: 900px;
     padding-right: 500px;
     margin-left: -120px;
-    overflow-x: hidden;
   
   }
 
@@ -567,22 +562,6 @@ html,body{
    left: 150px;
    width: 3px;
   }
-
-  .main{
-    width: 100%;
-    display:grid;
-  }
-
-  .marquee .form {
-    margin: 5%;
-    display: flex-box;
- 
-  }
-
-  header{
-    margin: 80px;
-  }
-
 
   .more{
     background-color: /*#f9f9f9*/ black;
@@ -603,9 +582,22 @@ html,body{
   display: inline-block;
   position: relative;
   z-index: 2;
- 
- 
  }
+
+  .main{
+    width: 100%;
+    display:grid;
+  }
+
+  .marquee .form {
+    margin: 5%;
+    display: flex-box;
+  }
+
+  header{
+    margin: 80px;
+  }
+
 
 .img{
   width: 25%;
@@ -613,22 +605,20 @@ html,body{
 }
 
 .title{
-  
   margin: 40%;
-  margin-left: -20px;
+  margin-left: -140px;
   z-index: 1;
   left:10px;
   position: relative;
  top: 10px; 
-
 }
 
 
 .sub{
   z-index: 1;
   position:relative;  
-  right: -60px;
-  top: -60px;
+  right: 300px;
+  top: 260px;
   
 
 }
