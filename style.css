@@ -7,6 +7,11 @@
     
 }
 
+.mar{
+  background-color: red;
+  top: 0px;
+  position: sticky;
+}
 
 body{
   background-image: url(dark-skinned-boy-looking-tablet-with-interest_259150-59543.jpg); 
