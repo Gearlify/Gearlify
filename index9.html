@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ben Carson</title>
+    <title>Isaac Newton</title>
     <link rel="stylesheet" href="style5.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,28 +13,116 @@
 <body>
     <header><img src="GEARLIFY ICON.png" alt="" width="80px" height="60px"></header>
 
-    <img class="img" src="Ben_Carson_official_portrait.jpg" alt="ben" loading="lazy"> <figcaption>Ben Carson</figcaption>
+    <img class="img" src="isaac-newton-who-he-was-why-google-apples-are-falling.jpg" alt="ben" loading="lazy"> <figcaption>Credit: JEAN-LEON HUENS/ National Geograp</figcaption>
 
     <article class="art">
-        <h1>Who is Ben Carson?</h1>
+        <h1>ISaac Newton- About</h1>
          <p>
-            <strong>Benjamin Solomon Carson Sr.</strong> (born September 18, 1951) is an American retired neurosurgeon, academic, author, and politician who served as the 17th United States Secretary of Housing and Urban Development from 2017 to 2021. A pioneer in the field of neurosurgery, he was a candidate for President of the United States in the 2016 Republican primaries.Carson is one of the most prominent black conservatives in the United States.
- <br> <p><strong>Carson</strong> became the director of pediatric neurosurgery at the Johns Hopkins Children's Center in 1984 at age 33, then the youngest chief of pediatric neurosurgery in the United States In 1987, he gained significant fame after leading a team of surgeons in the first known separation of conjoined twins joined at the back of the head.</p> Although the surgery was a success, the twins continued to experience neurological and medical complications. His additional accomplishments include performing the first successful neurosurgical procedure on a fetus inside the womb, developing new methods to treat brain-stem tumors, and revitalizing hemispherectomy techniques for controlling seizures. <br> <p>He has written over 100 neurosurgical publications. He retired from medicine in 2013; at the time, he was professor of neurosurgery, oncology, plastic surgery, and pediatrics at the Johns Hopkins School of Medicine.</p>
+            <strong>Sir Isaac Newton</strong> born 25 December 1642 – 20 March 1726/27 was an English polymath <br> active as a mathematician, physicist, astronomer, alchemist, theologian, and author who was described in his time as a natural philosopher. 
+            <p>He was a key figure in the Scientific Revolution and the Enlightenment that followed. His pioneering book Philosophiæ Naturalis Principia Mathematica (Mathematical Principles of Natural Philosophy), first published in 1687, consolidated many previous results and established classical mechanics.</p>
+            <p> Newton also made seminal contributions to optics, and shares credit with German mathematician Gottfried Wilhelm Leibniz for formulating infinitesimal calculus, though he developed calculus years before Leibniz.</p>
          </p>
     </article>
+
+ 
+       <div class="container">
+        <div class="head"><h1>Post a comment</h1></div>
+        <div> <span id="comment">0</span> Comments</div>
+        <div class="text"><p>We are happy to hear from you!</p></div>
+        <div class="comments">
+        <div class="commentbox">
+        <img src="portrait-man-with-afro-wig-glasses_53876-51852.jpg" alt="">
+        <div class="content">
+            <h2>Comment as: </h2>
+                <input type="text" value="Anonymous" class="user">
+           
+           <div class="commentinput">
+            <input type="text" placeholder="Enter comment" class="usercomment">
+            <div class="buttons">
+                <button type="submit" disabled id="publish">Publish</button>
+              
+              
+            </div>
+           </div>
+        </div>
+        </div>
+       </div>
 
     <button class="btn">
         <a href="index.html"> <i class='bx bx-arrow-back bx-md'></i></a>
     </button>
-
     <footer class="foot">
         <div class="diva">
             <h1 class="ft">More News Needed</h1>
-            <h1 class="p"> Send us a mail on any news in the school you'd like us to feature <a href="mailto:gearlifycorporation@gmail.com">gearlifycorporation@gmail.com</a></h1>     
-           
+            <h1 class="p"> Send us a mail on any news in the school you'd like us to feature <a href="mailto:gearlifycorporation@gmail.com">gearlifycorporation@gmail.com</a></h1> 
         </div>
-   
+ 
     &lt&lt&lt&copy;GearlifyCorporation&gt&gt&gt
        </footer> 
+
+
+
+       <script>
+        "use strict";
+    
+        const userId = {
+            name:null,
+            identity:null,
+            image:null,
+            message:null,
+            date:null,
+    }
+    
+    const userComment = document.querySelector(".usercomment");
+    const publish8tn = document.querySelector("#publish");
+    const comments = document.querySelector(".comments");
+    const userName = document.querySelector(".user");
+
+    userComment.addEventListener("input", e =>{
+        if(!userComment.value) {
+            publish8tn.setAttribute("disabled", "disabled");
+            publish8tn.classList.remove("abled")
+        }else{
+            publish8tn.removeAttribute("disabled");
+            publish8tn.classList.add("abled")
+        }
+    })
+
+
+   function addPost(){
+    console.log("The button works!")
+    if(userComment.value) return;
+    userId.name = userName.value;
+    if(userId.name === "Anonymous") {
+        userId.identity = false;
+        userId.image = "anonymous.png";
+    } else{
+        userId.identity = true;
+        userId.image = "portrait-man-with-afro-wig-glasses_53876-51852.jpg"
+    }
+
+   userId.message = userComment.value;
+   userId.date = new Date().toLocaleDateString();
+   let published = 
+   `<div class="parents">
+    <img src="$(userId.image)">
+    <div>
+         <h1>$(userId.name)</h1>
+         <p>$(userId.message)</p>
+         <div class="engagements"> <img src="like.png"> <img src="share.png"></div>
+         <span class="date">$(userId.date)</span>
+         </div> 
+        </div>`;
+
+      comments.innerHTML += published;
+      userComment.value = "";
+   }
+
+   publish8tn.addEventListener("click", addPost)
+
+
+    </script>
+    
+
 </body>
 </html>
