@@ -9,6 +9,12 @@ header{
     margin: 5rem;
 }
 
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .img{
     width: 500px;
     height: 500px;
@@ -19,7 +25,7 @@ header{
     display: flexbox;
     margin-left: auto;
     margin: 10px;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
 
 
     p{
@@ -52,6 +58,13 @@ header{
     margin-left: 80%;
     margin: 15%;
   }
+
+  .ars{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 70px;
+  }
   
   
   .p{
@@ -66,8 +79,8 @@ header{
 
   figcaption{
     font-size: small;
-    padding-left:950px;
-      padding-right:50px;
+    padding-left:800px;
+    padding-right: 50px;
   }
 
   .bx bx-arrow-back{
@@ -78,9 +91,93 @@ header{
     margin-left: 1850px;
     margin-top: -1000px;
     border-radius: 4px;
-    
-  
   }
+
+.container{
+  display: flex-box;
+  justify-content: center;
+  background-color: #fff;
+  align-items:center;
+  padding:20px;
+  box-shadow: 0 0 5px #000000;
+  min-height: 400px;
+}
+
+.head{
+   text-transform: uppercase;
+   margin-bottom: 80px;
+  }
+
+.text{
+  margin: 10px 0;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+
+.commentbox{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;  
+}
+
+.commentbox > img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin-right:20px ;
+}
+
+.content{
+  width: 100%;
+}
+
+.user{
+   border: none;
+   outline: none;
+   margin: 4px 0;
+   color: #610f75;
+   margin-left: 20px;
+   padding: 10px;
+}
+
+
+.commentinput > input{
+  border: none;
+  padding: 10px;
+  padding-left: 0;
+  outline: none;
+  border-top: 2px solid blueviolet;
+  margin-bottom: 10px;
+  width: 95%;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #808080;
+}
+
+.buttons button{
+  padding: 5px 10px;
+  background: #e2c6c6;
+  color: #808080;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.buttons button .abled{
+  background: blue;
+  color: #fff;
+
+}
+
 
 @media (max-width:600px){
 
